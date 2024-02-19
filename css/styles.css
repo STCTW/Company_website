@@ -11111,12 +11111,24 @@ body {
   }
 }
 
+
 .about-section {
+  background-image: url("https://i.imgur.com/YOUR_IMAGE_URL.jpg");
+  background-size: cover;
+  background-position: center;
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.about-section h2 {
+  color: #fff;
+  text-align: center;
 }
 .about-section p {
+  color: #fff;
   margin-bottom: 5rem;
+}
+.about-section a {
+  margin: 0 auto;
+  display: block;
 }
 
 .projects-section {
@@ -11199,5 +11211,11 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  background-color: #333;
+  padding: 2rem 0;
+  color: #ddd;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 0;
 }
