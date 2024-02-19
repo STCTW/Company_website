@@ -11065,7 +11065,7 @@ body {
 
 .masthead {
   position: relative;
-  width: auto%;
+  width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
