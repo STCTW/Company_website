@@ -1300,7 +1300,7 @@ progress {
   }
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 100%;
   }
   .col-lg-9 {
     flex: 0 0 auto;
@@ -11066,7 +11066,7 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/STCTW_logo.png");
@@ -11089,12 +11089,6 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
-@media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -11111,13 +11105,29 @@ body {
   }
 }
 
+/* 모바일 환경 스타일 */
+
+@media (max-width: 768px) {
+  .masthead {
+    height: auto;
+  }
+
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .col-lg-8 {
+    width: 80%;
+  }
+}
+
 
 .about-section {
-  background-image: url("https://i.imgur.com/YOUR_IMAGE_URL.jpg");
-  background-size: cover;
-  background-position: center;
+  padding: 50px 0;
   padding-top: 10rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
+
 .about-section h2 {
   color: #fff;
   text-align: center;
